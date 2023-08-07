@@ -11,7 +11,7 @@ if (url.includes("/v1/vip_info")) {
   }
 } else if (url.includes("/v2/user")) {
   if (obj.result) {
-    obj.result.svip_given = 999;
+    obj.result.svip_given = 888;
     obj.result.is_phone_verified = true;
     obj.result.is_xy_vip = true;
     obj.result.vip_expired_at = 8000000000;
@@ -23,7 +23,7 @@ if (url.includes("/v1/vip_info")) {
         obj.result.wt.vip.expired_at = 8000000000;
         obj.result.wt.vip.svip_expired_at = 8000000000;
       }
-      obj.result.wt.svip_given = 999;
+      obj.result.wt.svip_given = 888;
     }
     obj.result.is_primary = true;
     obj.result.xy_vip_expire = 8000000000;
